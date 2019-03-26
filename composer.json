@@ -1,0 +1,36 @@
+{
+    "name": "lenderspender/laravel-factories-ide-helper",
+    "description": "Generate IDE helper file for Laravel factories",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Bert van Hoekelen",
+            "email": "bert@magwel.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LenderSpender\\LaravelFactoriesIdeHelper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LenderSpender\\LaravelFactoriesIdeHelper\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "barryvdh/laravel-ide-helper": "^2.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^3.7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LenderSpender\\LaravelFactoriesIdeHelper\\LaravelFactoriesIdeHelperServiceProvider"
+            ]
+        }
+    }
+}
