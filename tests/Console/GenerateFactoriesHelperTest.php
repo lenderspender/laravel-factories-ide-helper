@@ -50,7 +50,7 @@ class GenerateFactoriesHelperTest extends TestCase
                 return true;
             }
 
-            if ($filename === '_ide_helper_factory.php') {
+            if ($filename === '_ide_helper_factories.php') {
                 self::assertStringContainsString('ModelStubFactoryBuilder', $contents);
 
                 return true;

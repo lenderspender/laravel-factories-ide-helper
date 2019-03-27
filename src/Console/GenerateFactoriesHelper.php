@@ -91,7 +91,7 @@ class GenerateFactoriesHelper extends Command
      */
     private function createHelperFile(Collection $factories): void
     {
-        $filename = $this->configRepository->get('ide-helper.filename') . '_factory.php';
+        $filename = $this->configRepository->get('ide-helper.filename') . '_factories.php';
         $content = $this->factoryHelper->generate($factories);
 
         if ($this->filesystem->put($filename, $content)) {

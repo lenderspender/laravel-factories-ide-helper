@@ -4,7 +4,7 @@
 
 /**
 * A helper file for Laravel 5, to provide autocomplete information for laravel factories to your IDE
-* Generated for Laravel <?= $version; ?> on <?= carbon()->format('Y-m-d H:i:s'); ?>.
+* Generated for Laravel <?= $version; ?> on <?= now()->format('Y-m-d H:i:s'); ?>.
 *
 * This file should not be included in your code, only analyzed by your IDE!
 */
