@@ -13,6 +13,8 @@ class FactoryHelperTest extends TestCase
     public function test_generate_adds_new_override_method(): void
     {
         Carbon::setTestNow('2019-03-26 10:01:02');
+        $application = $this->partialMock(\Illuminate\Contracts\Foundation\Application::class);
+        $application->expects('version')->andReturn('5.8.8');
 
         $factoryHelper = $this->app->make(FactoryHelper::class);
         $factories = collect([new FactoryType('App\\Model', 'User')]);
