@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use LenderSpender\LaravelFactoriesIdeHelper\FactoryHelper;
 use LenderSpender\LaravelFactoriesIdeHelper\FactoryType;
 
-class FactoryMetaHelperTest extends TestCase
+class FactoryHelperTest extends TestCase
 {
     public function test_generate_adds_new_override_method(): void
     {
