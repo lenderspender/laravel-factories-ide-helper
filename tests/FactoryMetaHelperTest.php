@@ -7,7 +7,7 @@ namespace LenderSpender\LaravelFactoriesIdeHelper\Tests;
 use LenderSpender\LaravelFactoriesIdeHelper\FactoryMetaHelper;
 use LenderSpender\LaravelFactoriesIdeHelper\FactoryType;
 
-class FactoryHelperTest extends TestCase
+class FactoryMetaHelperTest extends TestCase
 {
     public function test_generate_adds_new_override_method(): void
     {
